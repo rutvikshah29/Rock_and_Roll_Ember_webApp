@@ -6,9 +6,14 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
-  this.route('bands');
-  this.route('songs');
+// routes: /bands/:slug/songs or /bands/:slugs/albums
+// :slug refers to a dynamic route segment. In this case for each band.
+export default Router.map(function() {
+  this.route('bands', function() {
+    this.route('band', { path: ':slug' }, function(){
+      this.route('songs');
+    });
+  }); 
 });
 
-export default Router;
+
