@@ -1,7 +1,7 @@
-# rarwe
+# rarwe (Rock & Roll with Ember.js)
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an exciting application which can typically be used for cataloging your day-to-day music collections including your favourite Artists, Bands, Songs, their ratings and much more! This web-app is built using Ember.js as the main front-end framewrok alongside Html, Css and Javascript for designing.
 
 ## Prerequisites
 
