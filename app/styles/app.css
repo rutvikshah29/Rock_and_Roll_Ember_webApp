@@ -25,10 +25,7 @@ a {
   margin: 40px 0 20px;
   border-bottom: 1px solid;
 }
-.rr-page-header > .rr-app-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .rr-app-title > .rr-subtitle {
   font-weight: normal;
 }
@@ -45,100 +42,117 @@ a {
   --light-blue: #96ccff;
   --mid-grey: #555;
   --near-white: #f4f4f4;
-  --input-color: var(--mid-grey); 
-  --button-color: var(--near-white); 
-  --button-bg-color: var(--blue); 
-  --button-hover-color: var(--dark-blue); 
+  --input-color: var(--mid-grey);
+  --button-color: var(--near-white);
+  --button-bg-color: var(--blue);
+  --button-hover-color: var(--dark-blue);
   --button-disabled-color: var(--light-blue);
 }
 rr-navbar {
-  position: relative; min-height: 50px;
+  position: relative;
+  min-height: 50px;
   border: 1px solid transparent;
 }
-.rr-navbar > .rr-nav { 
+.rr-navbar > .rr-nav {
   display: flex;
   margin: 0;
-  padding: 0; list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
-  .rr-navbar-item { 
-    padding: 5px;
-  }
-  .rr-navbar-item > a:hover {
+.rr-navbar-item {
+  padding: 5px;
+}
+.rr-navbar-item > a:hover {
   border-bottom: 2px solid var(--navitem-link-color);
-  }
-  .rr-navbar-item > a.active {
+}
+.rr-navbar-item > a.active {
   color: inherit;
   border-bottom: 2px solid var(--navitem-link-color);
-  }
-  .rr-navbar-item + .rr-navbar-item { 
-    margin-left: 10px;
-  }
+}
+.rr-navbar-item + .rr-navbar-item {
+  margin-left: 10px;
+}
 
-  /* ch-5 nested routes */
-  .rr-sidebar {
-    float: left;
-    width: calc( 100% / 3 ); /* .w-third */
-    }
-    .rr-main-panel {
-    float: left;
-    width: calc( 100% / 1.5); /* .w-two-thirds */
-    }
-    .rr-list {
-    list-style-type: none;
-    }
-    .rr-list-item {
-    margin-bottom: 10px;
-    }
-    .rr-band-link > .rr-pointer {
-    margin-left: 5px;
-    display: none;
-    }
-    .rr-band-link.active > .rr-pointer {
-    display: inline-block;
-    }
+/* ch-5 nested routes */
+.rr-sidebar {
+  float: left;
+  width: calc(100% / 3); /* .w-third */
+}
+.rr-main-panel {
+  float: left;
+  width: calc(100% / 1.5); /* .w-two-thirds */
+}
+.rr-list {
+  list-style-type: none;
+}
+.rr-list-item {
+  margin-bottom: 10px;
+}
+.rr-band-link > .rr-pointer {
+  margin-left: 5px;
+  display: none;
+}
+.rr-band-link.active > .rr-pointer {
+  display: inline-block;
+}
 
-    /* ch-6 Controllers */
+/* ch-6 Controllers */
 
 .rr-new-label {
   margin-top: 1rem;
   padding-left: 1rem;
 }
 .rr-input {
-color: var(--input-color); 
-border-style: solid; 
-border-width: 1px; 
-padding: .25rem;
+  color: var(--input-color);
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.25rem;
 }
 .rr-action-button {
-color: var(--button-color); 
-background-color: var(--button-bg-color); 
-border-radius: .125rem;
-padding: .25rem;
-padding-left: .5rem;
-padding-right: .5rem;
+  color: var(--button-color);
+  background-color: var(--button-bg-color);
+  border-radius: 0.125rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .rr-action-button:hover {
   background-color: var(--button-hover-color);
 }
 .rr-action-button[disabled] {
-background-color: var(--button-disabled-color);
+  background-color: var(--button-disabled-color);
 }
-.rr-cancel-icon { 
-  align-self: center; 
-  margin-left: .25rem; 
-  background: none; 
+.rr-cancel-icon {
+  align-self: center;
+  margin-left: 0.25rem;
+  background: none;
   border: none;
   color: inherit;
 }
-.rr-inline-form { 
+.rr-inline-form {
   display: flex;
 }
 .rr-inline-form-group {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ch-7 Components */
 .rating-panel > .rating-star {
   cursor: pointer;
+}
+
+/* ch-8 Advanced Routing */
+.rr-header-link > .rr-app-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.rr-panel {
+  padding: 1rem;
+  border: 0.125rem solid;
+  border-radius: 0.125rem;
+}
+.rr-textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
